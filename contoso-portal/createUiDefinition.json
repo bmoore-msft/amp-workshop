@@ -153,7 +153,7 @@
             "vmName": "[basics('vmName')]",
             "adminUsername": "[basics('adminUsername')]",
             "authenticationType": "[basics('SSHCredentials').authenticationType]",
-            "adminPasswordOrKey": "[coalesce(basics('SSHCredentials').password, basics('SSHCredentials').sshPublicKey)]",
+            "adminPasswordOrKey": "[coalesced(basics('SSHCredentials').password, basics('SSHCredentials').sshPublicKey)]",
 
             "vmSize": "[steps('VirtualMachineConfig').vmSize]",
             "storageNewOrExisting": "[steps('VirtualMachineConfig').storageAccount.newOrExisting]",
