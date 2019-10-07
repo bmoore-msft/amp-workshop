@@ -149,7 +149,6 @@
         ],
         "outputs": {
 
-            "location": "[location()]",
             "vmName": "[basics('vmName')]",
             "adminUsername": "[basics('adminUsername')]",
             "authenticationType": "[basics('SSHCredentials').authenticationType]",
